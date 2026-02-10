@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatics Portfolio | Phatudi Daniel Modiba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        :root {
+            --brand-blue: #0ea5e9;
+            --brand-dark: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: white; color: black; }
+            .glass { border: 1px solid #ccc; background: white; }
+            .bg-slate-900 { background: white !important; color: black !important; }
+            .text-white { color: black !important; }
+            .text-slate-400 { color: #666 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 no-print">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <span class="text-xl font-bold text-white tracking-tighter">INF<span class="text-sky-500">.</span>PORTFOLIO</span>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#certifications" class="hover:text-sky-400 transition">Certifications</a>
+                <a href="#" onclick="window.print()" class="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-500 transition">Export PDF</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-block px-3 py-1 rounded-full border border-sky-500/30 text-sky-400 text-xs font-bold mb-6 tracking-widest uppercase">
+                3rd Year Informatics Student
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Designing systems for <span class="text-sky-500">human</span> impact.
+            </h1>
+            <p class="text-xl text-slate-400 leading-relaxed mb-8 max-w-2xl">
+                Hi, I'm <span class="text-white font-semibold">PHATUDI DANIEL MODIBA</span>. I study the intersection of people, information, and technology. I translate complex business requirements into scalable technical solutions.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+                <a href="mailto:phatudimodiba12@gmail.com" class="flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold hover:bg-sky-400 transition">
+                    Contact Me
+                </a>
+                <!-- Downloadable Resume Button -->
+                <a href="PHATUDI MODIBA_CV.pdf" download class="flex items-center gap-2 border border-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-800 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    Download CV
+                </a>
+                <div class="flex items-center gap-4 px-4">
+                    <a href="https://github.com/phatudi230" class="text-slate-400 hover:text-white transition">GitHub</a>
+                    <a href="http://www.linkedin.com/in/phatudi-daniel-modiba" class="text-slate-400 hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Summary / Highlights -->
+    <section class="pb-20 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 border-t border-slate-800 pt-12">
+            <div>
+                <h3 class="text-sky-400 font-bold uppercase tracking-widest text-xs mb-4">Career Highlights</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <span class="text-sky-500 font-bold">01</span>
+                        <p class="text-sm text-slate-300"><b>Completed FreeCodeCamp coursework</b> - built a solid foundation in programming, data handling, and problem-solving.</p>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-sky-500 font-bold">02</span>
+                        <p class="text-sm text-slate-300"><b>Currently working on Cisco Data Analytics Essentials labs</b> - gaining hands-on experience with industry-standard data analysis workflows.</p>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-sky-500 font-bold">03</span>
+                        <p class="text-sm text-slate-300">practiced data visualization and storytelling through interactive reports.</p>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-sky-500 font-bold">04</span>
+                        <p class="text-sm text-slate-300"><b>Explored Python for data analysis on CodeSignal</b>- applied Python libraries for analytics, with ongoing learning to deepen expertise.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="text-white font-bold mb-4">Education</h3>
+                <div class="mb-4">
+                    <p class="text-sky-400 text-sm font-bold">Dip in Informatics</p>
+                    <p class="text-xs text-slate-400">Tshwane University of Technology • 2024 — Present</p>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Major focus on Business Analysis, Database Management, and Human-Computer Interaction.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informatics Skill Matrix -->
+    <section id="skills" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12">Technical Matrix</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Column 1: Data & Analysis -->
+                <div class="p-6 glass rounded-2xl">
+                    <div class="w-10 h-10 bg-sky-500/20 text-sky-400 flex items-center justify-center rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Data & Analysis</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li>SQL (SQLlite, MySQL)</li>
+                        <li>Python (Pandas, NumPy, Seaborn, matplotlib)</li>
+                        <li>Data Cleaning & Wrangling</li>
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Database Normalization (ERDs)</li>
+                        <li>Data Visualization (Power BI)</li>
+                    </ul>
+                </div>
+                <!-- Column 2: Business & Strategy -->
+                <div class="p-6 glass rounded-2xl border-t-2 border-t-amber-500/30">
+                    <div class="w-10 h-10 bg-amber-500/20 text-amber-400 flex items-center justify-center rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Business & Strategy</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li>Requirements Gathering</li>
+                        <li>KPI Tracking & Reporting</li>
+                        <li>Stakeholder Communication</li>
+                        <li>Decision Support & Problem Solving</li>
+                    </ul>
+                </div>
+                <!-- Column 3: Analytics & Tools -->
+                <div class="p-6 glass rounded-2xl border-t-2 border-t-emerald-500/30">
+                    <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 flex items-center justify-center rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Analytics & Tools</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li>Advanced Excel (Dashboards, Automation)</li>
+                        <li>Statistical Analysis (Forecasting)</li>
+                        <li>Data Storytelling & Presentation</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WIL / Professional Competencies Section -->
+    <section id="wil" class="py-20 px-6 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4">Work Integrated Learning (WIL)</h2>
+            <p class="text-slate-400 mb-12 max-w-2xl">Demonstrating professional readiness through industry-standard practices and real-world collaboration.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Competency 1 -->
+                <div class="p-5 border border-slate-700 rounded-xl bg-slate-800/30">
+                    <h4 class="text-sky-400 font-bold text-sm uppercase mb-2">Data Cleaning & Preparation</h4>
+                    <p class="text-xs text-slate-400 italic mb-3">Skilled in handling messy datasets.</p>
+                    <p class="text-sm">Experienced with SQL and Python (pandas) for transforming raw data into analysis‑ready formats.</p>
+                </div>
+                <!-- Competency 2 -->
+                <div class="p-5 border border-slate-700 rounded-xl bg-slate-800/30">
+                    <h4 class="text-sky-400 font-bold text-sm uppercase mb-2">Exploratory Data Analysis (EDA)</h4>
+                    <p class="text-xs text-slate-400 italic mb-3">Discovering patterns in data.</p>
+                    <p class="text-sm">Proficient in using statistical methods and visualization tools to uncover insights and anomalies in datasets.</p>
+                </div>
+                <!-- Competency 3 -->
+                <div class="p-5 border border-slate-700 rounded-xl bg-slate-800/30">
+                    <h4 class="text-sky-400 font-bold text-sm uppercase mb-2">Data Visualization & Storytelling</h4>
+                    <p class="text-xs text-slate-400 italic mb-3">Build dashboards in Power BI.</p>
+                    <p class="text-sm">Ability to translate numbers into actionable business recommendations.</p>
+                </div>
+                <!-- Competency 4 -->
+                <div class="p-5 border border-slate-700 rounded-xl bg-slate-800/30">
+                    <h4 class="text-sky-400 font-bold text-sm uppercase mb-2">Predictive Analytics</h4>
+                    <p class="text-xs text-slate-400 italic mb-3">Experience with churn prediction, regression, and classification models.</p>
+                    <p class="text-sm">Familiar with scikit‑learn, XGBoost, and time‑series forecasting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-2">Selected Projects</h2>
+                    <p class="text-slate-400">Practical applications of Information Systems theory.</p>
+                </div>
+                <div class="text-sm font-medium text-sky-500 italic">
+                    Showing 3 of 4 Total Projects
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 transition-all hover:border-sky-500/50">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-[10px] px-2 py-1 bg-sky-500/10 text-sky-400 border border-sky-500/20 rounded uppercase font-bold tracking-widest">EDA</span>
+                            <span class="text-[10px] px-2 py-1 bg-slate-700 text-slate-300 rounded uppercase font-bold tracking-widest">Python</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Netflix Content Analytics</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-3">
+                            Perform exploratory data analysis (EDA) on the Netflix dataset to uncover insights about content distribution, genres, release trends, and regional contributions. The goal is to visualize patterns and provide actionable insights into Netflix’s content library.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Netflix%20Content%20Analysis/notebook/netflixNoteBook.ipynb" class="text-white font-bold inline-flex items-center gap-2 group-hover:text-sky-400">
+                                View Notebook 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 transition-all hover:border-sky-500/50">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-[10px] px-2 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded uppercase font-bold tracking-widest">Predictive Analytics</span>
+                            <span class="text-[10px] px-2 py-1 bg-slate-700 text-slate-300 rounded uppercase font-bold tracking-widest">PYTHON</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Bank customer churn prediction</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-3">
+                            This project utilizes Logistic Regression to predict the probability of customer attrition for a retail bank. By identifying high-risk churn clusters, this analysis provides data-driven strategies to improve customer retention and maximize lifetime value.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Bank%20Customer%20churn%20prediction/Notebook/customer%20churn%20prediction.ipynb" class="text-white font-bold inline-flex items-center gap-2 group-hover:text-sky-400">
+                                View Notebook
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: A "Systems" Project -->
+                <div class="md:col-span-2 group relative bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 transition-all hover:border-sky-500/50">
+                    <div class="p-8 flex flex-col md:flex-row gap-8 items-center">
+                        <div class="flex-1">
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-[10px] px-2 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded uppercase font-bold tracking-widest">Analytics</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Retail Sales Dashboard</h3>
+                            <p class="text-slate-400 mb-6">
+                               Created a comprehensive business intelligence tool using Advanced Excel and Power BI to forecast monthly revenue and identify customer patterns. The dashboard integrates sales data, customer demographics, and seasonal trends to provide actionable insights for strategic decision-making.
+                            </p>
+                            <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Retail%20Sales%20Dashboard/Dashboard/Retail%20Sales%20Dashboard.pbix" class="text-white font-bold inline-flex items-center gap-2 group-hover:text-sky-400">
+                                View Dashboard
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                            </a>
+                        </div>
+                        <div class="w-full md:w-1/2 rounded-xl overflow-hidden border border-slate-700 bg-slate-900">
+                            <img src="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Retail%20Sales%20Dashboard/Dashboard/Screenshot%202026-01-31%20205615.png?raw=true" 
+                                 alt="Retail Sales Dashboard Screenshot" 
+                                 class="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
+                                 onerror="this.parentElement.innerHTML='<div class=&quot;p-12 text-center text-slate-500 text-xs italic&quot;>[Dashboard Image Preview]</div>'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Certifications Section -->
+    <section id="certifications" class="py-20 px-6 bg-slate-800/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12">Professional Certifications</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cert 1 -->
+                <div class="flex items-start gap-4 p-5 glass rounded-2xl border-l-4 border-l-sky-500">
+                    <div class="shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-slate-900 font-bold">
+                        SDS
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm">Statistics for Data Science</h4>
+                        <p class="text-xs text-slate-400">SimpliLearn • Issued Jun 2025</p>
+                        <a href="https://simpli-web.app.link/e/mvoVgEbCC0b" class="text-sky-400 text-[10px] font-bold mt-2 inline-block hover:underline uppercase">Verify Credential</a>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="flex items-start gap-4 p-5 glass rounded-2xl border-l-4 border-l-amber-500">
+                    <div class="shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-slate-900 font-bold">
+                        PY
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm">Data Analytics with Python</h4>
+                        <p class="text-xs text-slate-400">CodeSignal • Issued Jun 2025</p>
+                        <a href="#" class="text-sky-400 text-[10px] font-bold mt-2 inline-block hover:underline uppercase">Verify Credential</a>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="flex items-start gap-4 p-5 glass rounded-2xl border-l-4 border-l-emerald-500">
+                    <div class="shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-slate-900 font-bold">
+                        PBI
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm">Data Science with Python</h4>
+                        <p class="text-xs text-slate-400">Dataquest • Issued july 2023</p>
+                        <a href="https://app.dataquest.io/verify_cert/5A6OSLPE4DPIMKZZWD66/" class="text-sky-400 text-[10px] font-bold mt-2 inline-block hover:underline uppercase">Verify Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-slate-800 text-center px-6">
+        <h2 class="text-2xl font-bold text-white mb-4">Let's build something efficient.</h2>
+        <p class="text-slate-400 mb-8 max-w-sm mx-auto">Available for Junior Informatics internships and freelance analytics projects.</p>
+        <div class="flex justify-center gap-6 text-sm">
+            <a href="mailto:phatudimodiba12@gmail.com" class="text-slate-400 hover:text-white transition">Email</a>
+            <a href="http://www.linkedin.com/in/phatudi-daniel-modiba" class="text-slate-400 hover:text-white transition">LinkedIn</a>
+            <a href="https://github.com/phatudi230" class="text-slate-400 hover:text-white transition">GitHub</a>
+        </div>
+        <p class="mt-12 text-[10px] uppercase tracking-widest text-slate-600 font-bold">
+            © 2026 phatudi daniel modiba • Handcrafted in HTML/Tailwind
+        </p>
+    </footer>
+
+</body>
+</html>
