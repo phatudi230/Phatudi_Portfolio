@@ -101,6 +101,7 @@
     gap:28px;
     list-style:none;
     margin:0; padding:0;
+    align-items:center;
   }
   .navlinks a{
     font-family:'IBM Plex Mono', monospace;
@@ -114,6 +115,22 @@
     transition:color .15s ease, border-color .15s ease;
   }
   .navlinks a:hover{color:var(--ink); border-color:var(--flag);}
+  
+  .nav-btn-cv {
+    background: var(--navy);
+    color: #fff !important;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border-bottom: none !important;
+    transition: background .15s ease, transform .12s ease !important;
+  }
+  .nav-btn-cv:hover {
+    background: var(--flag);
+    color: #fff !important;
+    border-color: transparent !important;
+    transform: translateY(-1px);
+  }
+
   @media (max-width:640px){
     .navlinks{gap:16px; flex-wrap:wrap;}
   }
@@ -574,6 +591,7 @@
       <li><a href="#cases">Case Files</a></li>
       <li><a href="#record">Track Record</a></li>
       <li><a href="#engage">Engage</a></li>
+      
     </ul>
   </div>
 </nav>
@@ -581,7 +599,7 @@
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Confidential — Prepared for Recruiting Teams</div>
+      <div class="eyebrow">Prepared for Recruiting Teams</div>
       <h1 class="thesis">I turn operational noise into <span class="accent">the number</span> that gets a decision made.</h1>
       <p class="hero-sub">
         <strong>Business &amp; Data Analyst in training</strong> — Diploma in Informatics, Tshwane University
@@ -593,6 +611,7 @@
       </div>
       <div class="cta-row">
         <a href="#cases" class="btn btn-primary">Review the case files</a>
+        <button onclick="window.open('Phatudi_Modiba_CV.pdf', '_blank')" class="btn btn-ghost">View CV</button>
         <a href="mailto:phatudimodiba12@gmail.com" class="btn btn-ghost">Email me</a>
       </div>
     </div>
@@ -636,7 +655,7 @@
         <div class="sec-num">01 — Capability</div>
         <h2>A working capability stack</h2>
       </div>
-      <p class="sec-desc">Not a list of logos — each row is backed by a delivered piece of work.</p>
+     
     </div>
 
     <table class="cap-table reveal">
@@ -681,7 +700,7 @@
         <div class="sec-num">02 — Case Files</div>
         <h2>Four briefs, four resolutions</h2>
       </div>
-      <p class="sec-desc">Each one self-initiated. Each one shipped through to an actual finding or outcome.</p>
+      <p class="sec-desc">Each one is self-initiated.</p>
     </div>
 
     <div class="case-grid">
@@ -702,7 +721,6 @@
           <p><span class="lbl">Result</span>Found the real driver — Station C, not the night shift — and
           proposed an 80/20 restructuring plan at zero capital cost.</p>
         </div>
-        <!-- Add this before <div class="case-tools"> in each relevant card -->
         <div class="case-preview">
           <img src="https://raw.githubusercontent.com/phatudi230/Data-Analysis-Portfolio/main/GlobalLink%20Logistics%20-%20Bottleneck%20Analysis/Screenshot%202026-06-19%20225739.png" 
               alt="GlobalLink Dashboard Preview" 
@@ -710,7 +728,7 @@
         </div>
         <div class="case-tools">
           <span>Python · Power BI · DAX</span>
-          <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/tree/main/GlobalLink%20Logistics%20-%20Bottleneck%20Analysis" class="case-link">View README →</a>
+          <a href="https://github.com/phatudi230/Business-Data-Analysis_Portfolio/tree/main/GlobalLink%20Logistics%20-%20Bottleneck%20Analysis#readme" class="case-link">View OverView →</a>
         </div>
       </article>
 
@@ -759,7 +777,7 @@
         </div>
         <div class="case-tools">
           <span>Figma · BPMN · Requirements docs</span>
-          <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/tree/main/Campus%20Student%20Marketplace" class="case-link">View README →</a>
+          <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/tree/main/Campus%20Student%20Marketplace" class="case-link">View Overview →</a>
         </div>
       </article>
 
@@ -781,7 +799,7 @@
         </div>
         <div class="case-tools">
           <span>Python · Scikit-learn · SMOTE</span>
-          <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Bank%20Customer%20churn%20prediction/Notebook/predictiion.ipynb" class="case-link">View notebook →</a>
+          <a href="https://github.com/phatudi230/Data-Analysis-Portfolio/blob/main/Bank%20Customer%20churn%20prediction/Notebook/predictiion.ipynb" class="case-link">View Notebook →</a>
         </div>
       </article>
     </div>
@@ -869,7 +887,7 @@
           </span>
         </div>
         <div class="ledger-row">
-          <span class="ledger-year">2024</span>
+          <span class="ledger-year">2023</span>
           <span class="ledger-name" style="flex:1; margin-left:16px;">
             National Senior Certificate
             <span class="ledger-issuer">Magaedisha Secondary School, Polokwane</span>
@@ -901,7 +919,6 @@
   <div class="wrap">
     <span>Phatudi Daniel Modiba | Business &amp; Data Analyst</span>
     <span class="dim">Pretoria, Gauteng — open to relocation</span>
-    <span class="dim">Confidential — Draft v2026.06</span>
   </div>
 </div>
 
